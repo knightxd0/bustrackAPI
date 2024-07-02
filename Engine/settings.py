@@ -22,7 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = b'mCKtKwiEo9uJun717pe0mhCYvxh0mkTp_RO--aIj7-I='
 
 #CONNECTION = "postgres://adminxten:xten1234@localhost:5432/demo_project"
-CONNECTION = "postgres://adminxten:xten1234@localhost:5432/bustrack"
+# CONNECTION = "postgres://adminxten:xten1234@localhost:5432/bustrack"
+CONNECTION = "postgres://default:tO9dm7SGoXhu@ep-nameless-wildflower-a48726qk.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+# psql "postgres://default:tO9dm7SGoXhu@ep-nameless-wildflower-a48726qk.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 
 # Token for OpenAPI
 Open_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib3BlbkFQSS1UYWxhYWRUaGFpLWVuZXJneSJ9.nuvRJgnwfkZquFolTg0E3c3CV7nsQb-lcF5ZWZ_jboo'
