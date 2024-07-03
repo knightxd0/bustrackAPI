@@ -26,6 +26,16 @@ class DataService:
 	                  VALUES ('{name}', {lat},{long}, {speed});
                     """
             cursor.execute(query)
+            data = f"""
+                    DELETE FROM public.data
+                    WHERE id = (
+                                    select id
+                                    from data
+                                    order by id asc
+                                    limit 1
+                                );
+                    """
+            cursor.execute(data)
             response_return.set_success_status()
             conn.commit()
             cursor.close()
@@ -61,8 +71,9 @@ class DataService:
             for record in records:
                 selectObject.append(dict(zip(columnNames, record)))
 
+            data = selectObject[0] if len(selectObject) != 0 else "device offline"
             res = {
-                "value": selectObject[0]
+                "value": data
             }
 
             response_return.set_success_status(res)

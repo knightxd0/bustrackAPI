@@ -23,7 +23,7 @@ SECRET_KEY = b'mCKtKwiEo9uJun717pe0mhCYvxh0mkTp_RO--aIj7-I='
 
 #CONNECTION = "postgres://adminxten:xten1234@localhost:5432/demo_project"
 # CONNECTION = "postgres://adminxten:xten1234@localhost:5432/bustrack"
-CONNECTION = "postgres://default:tO9dm7SGoXhu@ep-nameless-wildflower-a48726qk.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+CONNECTION = "postgres://default:fOiDz13UXvBQ@ep-royal-frog-a438qwic.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 # psql "postgres://default:tO9dm7SGoXhu@ep-nameless-wildflower-a48726qk.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 
 # Token for OpenAPI
